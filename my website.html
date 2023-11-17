@@ -1,19 +1,170 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <style>
-    #header {
-            background-color: #F1F1F1;
-            text-align: center;
-            padding: 20px;
-    }
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/*/
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/*  top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#37D7D3;
+}
+
+/* the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #3E37D7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+/* color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  two columns  */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add  CE effect */
+.CE {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/*  layout 1*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*  layout 2*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 </style>
-        <body>
-        <div id=”container”>
-            <div id="header">
-              <h1> MY WEBSITE </h1>
-            </div>
-        </div>
-            </body>  
-    </head>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>Welcome To Our Website</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="CE">
+      <h2>ANGEL BEACH RESORT </h2>
+      <h5>Title description, FEB 19 , 2023</h5>
+      <img src="logo beach.jpg" alt=" logo beach"height="200px">
+      <p>ANGEL BEACH RESORT offers a slice of paradise on Earth. Nestled in a pristine location, 
+        our luxurious accommodations, world-class amenities, and breathtaking natural beauty await. 
+        Whether you seek relaxation or adventure, our heavenly retreat ensures an unforgettable experience. 
+        Discover the serenity and indulgence you deserve at Angel Resort.</p>
+    </div>
+    
+    <div class="CE">
+      <h2>ALIN CONCERT </h2>
+      <h5>Title description, JAN 24, 2024</h5>
+      <img src="ALIN.jpg" alt=" ALIN"height="200px">
+      <p>A-Lin is a fan favorite and a grounded singer who just received 
+        the "Best Chinese Female Singer" title at the 34th Golden Melody Awards. 
+        This time, A-Lin will do her best to create a fresh yet intimate audiovisual feast for this show, 
+        as a way of repaying her fans for their years of support.</p>
+    </div>
+  
+</div>
+  <div class="rightcolumn">
+    <div class="CE">
+      <h2>About Us</h2>
+      <img src="logo beach.jpg" alt=" logo beach"height="200px">
+      <p> ANGEL BEACH Resort provides an array of rooms and banquets, plus event space at the one and only man made beach in town.</p>
+    </div>
+    <div class="CE">
+      <h3>Popular Post</h3>
+      <img src="edsheeran.jpg" alt=" edsheeran"height="200px">
+      <img src="taylorswift.jpg" alt="taylorswift"height="200px">
+      <img src="enhypen.jpg" alt=" enhypen"height="200px">
+    </div>
+    <div class="CE">
+      <h3>Follow Me</h3>
+      <a href="file:///C:/Users/ninja/OneDrive/Desktop/webdesign/webdesign/LayoutExample.html">ANGEL BEACH RESORT.com</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <h2>FOLLOW ANGEL BEACH RESORT</h2>
+  </div>
+
+</body>
 </html>
