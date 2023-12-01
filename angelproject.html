@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/*/
+.header {
+  padding: 50px;
+  font-size: large;
+  text-align: center;
+  background:#e6d4aa;
+}
+
+.header1 {
+  font-size: 15px;
+  text-align: center;
+  background-color: burlywood;
+}
+
+.header2 {
+  font-size: 15px;
+  text-align: center;
+  background-color:darksalmon;
+}
+
+/*  top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#E6B4AA ;
+}
+
+/* topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #3E37D7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+/* color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  two columns  */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add  CE effect */
+.CE {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+ 
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/*  layout 1*/
+@media screen and (max-width: 500px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*  layout 2*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CONCERT EVENT ANGEL BEACH RESORT</h1>
+  <p>Welcome To Our Website</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Concert</a>
+  <a href="#">Event</a>
+  <a href="#">Help</a>
+  <a href="#" style="float:right">About Us</a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="CE">
+        <div class="header1">
+            <h1>《CONCERT 2023》</h1>
+          </div>
+      <h2>POWER STATION BECAUSE OF LOVE WORLD TOUR 2023 <br> 动力火车《都是因为爱 世界巡迴演唱会》</h2>
+      <h5>23 Sep 2023, 8:00PM</h5>
+      <img src="DONGLIHUOCHE.JPG" alt=" donglihuoche"height="200px">
+      <p>
+        Don't miss Power Station's "Because of Love" World Tour 2023! Join the Taiwanese rock legends for a night<br> of electrifying hits 
+        and cutting-edge production celebrating their 1-year milestone.
+         Experience the universal<br> language of music that transcends borders and fuels this love-filled journey.</p>
+
+        
+        <h2>COLDPLAY CONCERT WORLD 2023 </h2>
+      <h5>22 Nov 2023, 8:30PM</h5>
+      <img src="coldplay.jpg" alt=" coldplay"height="200px">
+      <p>Don't miss Coldplay's "Harmony Across Horizons" World Tour 2023! Join the 
+        British icons for a night of<br> timeless hits, cutting-edge visuals, and unity through music. 
+        Experience an unforgettable concert where <br>Coldplay's music becomes a universal language, connecting hearts worldwide.
+        </p>
+    </div>
+
+    
+    <div class="CE">
+        <div class="header2">
+            <h1>《CONCERT 2024》</h1>
+          </div>
+      <h2>ALIN CONCERT </h2>
+      <h5>JAN 24, 2024</h5>
+      <img src="ALIN.jpg" alt=" ALIN"height="200px">
+      <p>A-Lin is a fan favorite and a grounded singer who just received 
+        the "Best Chinese Female Singer" title at <br>the 34th Golden Melody Awards. 
+        This time, A-Lin will do her best to create a fresh yet intimate audiovisual <br>feast for this show, 
+        as a way of repaying her fans for their years of support.</p>
+
+        <h2>P郭富城舞林星传世界巡回演唱会2024 <br>Aaron Kwok Amazing Starry Malaysia Tour 2024</h2>
+      <h5>16 FEB ,9PM
+      <br>18 FEB ,6PM
+      <br>23 FEB ,9PM
+      <br>24 FEB ,6PM
+       </h5>
+      <img src="guofucheng.jpg" alt=" guofucheng"height="200px">
+      <p>Aaron Kwok, the stage king, dazzled in three sold-out shows at Genting World. Now, he's back with the "Dancing in the Forest" <br>concert series, 
+        promising an unforgettable musical feast. Known for his dynamic performances and unique style,
+        Aaron is excited <br>to return to Malaysia for the "Angkor" concert, acknowledging the immense passion of his Malaysian fans. 
+        Don't miss this four-concer<br> series—it's set to be an unforgettable dance extravaganza!
+        </p>
+
+    </div>
+  
+</div>
+  <div class="rightcolumn">
+    <div class="CE">
+      <h2>About Us</h2>
+      <img src="logo beach.jpg" alt=" logo beach"height="200px">
+      <p>ANGEL BEACH RESORT. Our luxurious accommodations, world-class amenities,
+         and stunning natural beauty create an unforgettable retreat. Whether for relaxation or adventure, 
+         discover serenity and indulgence at Angel Resort.</p>
+    </div>
+    <div class="CE">
+      <h3>《COMING SOON》</h3>
+      <img src="edsheeran.jpg" alt=" edsheeran"height="285px">
+      <img src="ive.jpg" alt="ive"height="285px">
+      <img src="enhypen.jpg" alt=" enhypen"height="285px">
+      <img src="xuezhiqian.jpg" alt=" xuezhiqian"height="200px">
+    </div>
+    <div class="CE">
+      <h3>Click me for more details !! </h3>
+      <a href="file:///C:/Users/ninja/OneDrive/Desktop/webdesign/webdesign/LayoutExample.html">ANGEL BEACH RESORT.com</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <h2>FOLLOW ANGEL BEACH RESORT</h2>
+  </div>
+
+</body>
+</html>
